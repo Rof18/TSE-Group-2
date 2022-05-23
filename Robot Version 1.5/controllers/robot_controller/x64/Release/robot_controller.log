@@ -1,0 +1,13 @@
+﻿  robot_controller.c
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdbool.h(15,1): warning C4005: 'bool': macro redefinition
+C:\Program Files\Webots\include\controller\c\webots\types.h(51): message : see previous definition of 'bool'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdbool.h(16,1): warning C4005: 'false': macro redefinition
+C:\Program Files\Webots\include\controller\c\webots\types.h(62): message : see previous definition of 'false'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdbool.h(17,1): warning C4005: 'true': macro redefinition
+C:\Program Files\Webots\include\controller\c\webots\types.h(56): message : see previous definition of 'true'
+  Generating code
+  2 of 11 functions (18.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  robot_controller.vcxproj -> C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\robot_controller.exe
