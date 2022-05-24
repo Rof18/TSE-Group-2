@@ -1,0 +1,187 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.004022056092097693 -0.9998074524428707 0.019206277736428107 5.184003007801135
+  position -1.2207415106195716 -0.0014978358892918653 2.7629127104778486
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 1 1
+  wallHeight 0.2
+}
+Robot {
+  translation 0 0 0.03
+  rotation 0 1 0 0
+  children [
+    DistanceSensor {
+      translation 0.02 -0.04 0
+      rotation 0 0 1 -1.3
+      children [
+        DEF sensor Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds_1"
+      boundingObject USE sensor
+      physics Physics {
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.7 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.08 0.04
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.0455 0.025 -0.01
+      }
+      device [
+        PositionSensor {
+          name "ps_2"
+        }
+        RotationalMotor {
+          name "bl_motor_4"
+        }
+      ]
+      endPoint Solid {
+        translation 0.0455 0.025 -0.01
+        rotation 0 1 0 1.57
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.02
+            }
+          }
+        ]
+        boundingObject USE Wheel
+        physics DEF Physics_wh Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.0455 0.025 -0.01
+      }
+      device [
+        PositionSensor {
+          name "ps_1"
+        }
+        RotationalMotor {
+          name "br_motor_3"
+        }
+      ]
+      endPoint Solid {
+        translation -0.0455 0.025 -0.01
+        rotation 0 1 0 1.57
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.02
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE Wheel
+        physics DEF Physics_wh Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.0455 -0.025 -0.01
+      }
+      device [
+        RotationalMotor {
+          name "fr_motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation -0.0455 -0.025 -0.01
+        rotation 0 1 0 1.57
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.02
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Wheel
+        physics DEF Physics_wh Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.0455 -0.025 -0.01
+      }
+      device [
+        RotationalMotor {
+          name "fl_motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation 0.0455 -0.025 -0.01
+        rotation 0 1 0 1.57
+        children [
+          DEF Wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.02
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE Wheel
+        physics DEF Physics_wh Physics {
+        }
+      }
+    }
+    DistanceSensor {
+      translation -0.02 -0.04 0
+      rotation 0 0 1 -1.8
+      children [
+        DEF sensor Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds_0"
+      boundingObject USE sensor
+      physics Physics {
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "robot_controller"
+}

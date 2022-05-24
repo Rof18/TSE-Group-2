@@ -1,0 +1,12 @@
+﻿  movement_controller.c
+C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\movement_controller.c(112,31): warning C4013: 'get_duration' undefined; assuming extern returning int
+C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\movement_controller.c(112,1): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\movement_controller.c(113,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\movement_controller.c(122,28): warning C4142: 'get_duration': benign redefinition of type
+C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\movement_controller.c(124,12): warning C4305: 'return': truncation from 'double' to 'float'
+  Generating code
+  3 of 14 functions (21.4%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  robot_controller.vcxproj -> C:\Users\Filip Obajtek\Desktop\Filipa Dokumenty\Year 2\TSE\robot simulation\controllers\robot_controller\robot_controller.exe
